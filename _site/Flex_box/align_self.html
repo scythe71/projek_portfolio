@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px;
+            background-color: #0662cd;
+            height: 300px;
+        }
+
+        .box {
+            background-color: #78ff07;
+            padding: 5px 20px;
+            margin: 10px;
+            font-size: 20px;
+            border-radius: 3px;
+            border: 1px solid black;
+        }
+
+        .flex-start {
+            align-self: flex-start;
+        }
+
+        .flex-end {
+            align-self: flex-end;
+        }
+
+        .center {
+            align-self: center;
+        }
+
+        .stretch {
+            align-self: stretch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belajar Flexbox</h1>
+    <div id="container">
+        <div class="box box1">Default</div>
+        <div class="box flex-start">flex start</div>
+        <div class="box center">center</div>
+        <div class="box flex-end">flex end</div>
+        <div class="box stretch">stretch(default)</div>
+    </div>
+</body>
+</html>
